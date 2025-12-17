@@ -5,7 +5,7 @@ const products = [
     name: "Porte métallique simple",
     category: "metal",
     price: 3200,
-    image: "https://via.placeholder.com/300x200?text=Porte+Métallique",
+    image: "Porte métallique simple.avif",
   },
   {
     id: 2,
