@@ -1,26 +1,21 @@
-import React from 'react'
-import products from '../Data/Products'
-import "./Catalogue.css"
-import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/cartSlice";
+import React from "react";
+import  products from "../Data/Products";
+import ProductCard from "../components/ProductCard";
+import "./Home.css"
+import Hero from "../components/hero";
 
 export default function Home() {
-  const dispatch = useDispatch();
   return (
-<div className='grid'>
-{ products.map((product)=>(
- <div className='card'>
-    <img src={product.image}  alt={product.name}/>
-    <h3>{product.name}</h3>
-    <p> prix {product.price}</p>
-    <div className="actions">
-        <span>❤️ 🛒</span>
-        <span onClick={() => dispatch(addToCart(product))}>🛒</span>
-    </div>
-</div>
-
-))}
+    <div >
+      <Hero/>
       
+      <div className="product-grid">
+            
+        {products.slice(0, 6).map(product => (
+            <ProductCard key={product.id} product={product} />
+            ))} 
+      </div>
+        
     </div>
-  )
+  );
 }

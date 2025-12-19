@@ -1,26 +1,19 @@
-import React from 'react'
-import products from '../Data/Products'
-import "./Catalogue.css"
-import { useDispatch } from "react-redux";
-import { addToCart } from "../redux/cartSlice";
+import React from "react";
+import ProductCard from "../components/ProductCard";
+import  products from "../Data/Products";
 
 export default function Catalogue() {
-  const dispatch = useDispatch();
   return (
-<div className='grid'>
-{ products.map((product)=>(
- <div className='card'>
-    <img src={product.image}  alt={product.name}/>
-    <h3>{product.name}</h3>
-    <p> prix {product.price}</p>
-    <div className="actions">
-        <span>❤️ 🛒</span>
-        <span onClick={() => dispatch(addToCart(product))}>🛒</span>
-    </div>
-</div>
+    <div style={{ padding: "20px" }}>
+      <h1>Catalogue des fleurs</h1>
 
-))}
-      
+      <div className="product-grid">
+        {products.map(product => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
     </div>
-  )
+  );
 }
+
+

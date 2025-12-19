@@ -1,219 +1,174 @@
 const products = [
-  // 🔩 MENUISERIE MÉTALLIQUE (10)
+
   {
     id: 1,
-    name: "Porte métallique simple",
-    category: "metal",
-    price: 3200,
-    image: "Porte métallique simple.avif",
+    category: "Fleurs",
+    name: "Camelia",
+    price: 336,
+    currency: "MAD",
+    images: [
+      "/Image/camelia-1.jpg",
+      "camelia-2.jpeg"
+    ]
   },
   {
     id: 2,
-    name: "Porte métallique blindée",
-    category: "metal",
-    price: 6500,
-    image: "https://via.placeholder.com/300x200?text=Porte+Blindée",
+    category: "Fleurs",
+    name: "Amaryllis",
+    price: 30,
+    currency: "MAD",
+    images: [
+      "/Image/Amaryllis-maroc.jpeg",
+      "Amaryllis-maroc.jpeg"
+    ]
   },
   {
     id: 3,
-    name: "Grille de protection fenêtre",
-    category: "metal",
-    price: 1500,
-    image: "https://via.placeholder.com/300x200?text=Grille+Fenêtre",
+    category: "Fleurs",
+    name: "Osteospermum",
+    price: 18,
+    currency: "MAD",
+    images: [
+      "/Image/osteospermum.jpeg",
+      "osteospermum-maroc.jpeg"
+    ]
   },
   {
     id: 4,
-    name: "Rideau métallique",
-    category: "metal",
-    price: 7200,
-    image: "https://via.placeholder.com/300x200?text=Rideau+Métallique",
+    category: "Fleurs",
+    name: "Pelargonium",
+    price: 18,
+    currency: "MAD",
+    images: [
+      "/Image/pelargonium.jpeg",
+      "pelargonium-maroc.jpeg"
+    ]
   },
   {
     id: 5,
-    name: "Portail métallique",
-    category: "metal",
-    price: 5400,
-    image: "https://via.placeholder.com/300x200?text=Portail+Métallique",
+    category: "Fleurs",
+    name: "Pentas",
+    price: 18,
+    currency: "MAD",
+    images: [
+      "/Image/pentas.jpeg",
+      "pentas-maroc.jpeg"
+    ]
   },
   {
     id: 6,
-    name: "Escalier métallique",
-    category: "metal",
-    price: 8800,
-    image: "https://via.placeholder.com/300x200?text=Escalier+Métallique",
+    category: "Fleurs",
+    name: "Solanum",
+    price: 30,
+    currency: "MAD",
+    images: [
+    
+      "/Image/solanum-rantonnetii.jpg"
+    ]
   },
   {
     id: 7,
-    name: "Clôture métallique",
-    category: "metal",
-    price: 2600,
-    image: "https://via.placeholder.com/300x200?text=Clôture+Métallique",
+    category: "Fleurs",
+    name: "Polyantha",
+    price: 24,
+    currency: "MAD",
+    images: [
+      
+      "/Image/Polyantha-rose.jpg"
+    ]
   },
   {
     id: 8,
-    name: "Garde-corps métallique",
-    category: "metal",
-    price: 2300,
-    image: "https://via.placeholder.com/300x200?text=Garde+corps+Métal",
+    category: "Fleurs",
+    name: "Poinsettia",
+    price: 100,
+    currency: "MAD",
+    images: [
+      "/Image/poinsettia-flowers-red.jpg"
+    ]
   },
   {
     id: 9,
-    name: "Châssis métallique",
-    category: "metal",
-    price: 1900,
-    image: "https://via.placeholder.com/300x200?text=Châssis+Métal",
+    category: "Fleurs",
+    name: "Plectranthus",
+    price: 12,
+    currency: "MAD",
+    images: [
+      
+      "/Image/Plectranthus-oertendahlii.jpg",
+    ]
   },
   {
     id: 10,
-    name: "Pergola métallique",
-    category: "metal",
-    price: 7600,
-    image: "https://via.placeholder.com/300x200?text=Pergola+Métal",
+    category: "Fleurs",
+    name: "Petunia",
+    price: 18,
+    currency: "MAD",
+    images: [
+      "/Image/petunia.jpg"
+    ]
   },
-
-  // 🪟 ALUMINIUM (10)
   {
     id: 11,
-    name: "Fenêtre aluminium simple",
-    category: "aluminium",
-    price: 2100,
-    image: "https://via.placeholder.com/300x200?text=Fenêtre+Alu",
+    category: "Fleurs",
+    name: "Oeillet d'inde",
+    price: 14,
+    currency: "MAD",
+    images: [
+      "/Image/2017-11-13-18-28-42-scaled-1.jpg",
+    ]
   },
   {
     id: 12,
-    name: "Fenêtre aluminium double vitrage",
-    category: "aluminium",
-    price: 3400,
-    image: "https://via.placeholder.com/300x200?text=Fenêtre+Double+Vitrage",
+    category: "Fleurs",
+    name: "Oeillet de chine",
+    price: 12,
+    currency: "MAD",
+    images: [
+      "/Image/flower-5450859_1280.jpg",
+    ]
   },
   {
     id: 13,
-    name: "Porte aluminium",
-    category: "aluminium",
-    price: 3900,
-    image: "https://via.placeholder.com/300x200?text=Porte+Alu",
+    category: "Fleurs",
+    name: "Rosa Albertine (liane)",
+    price: 70,
+    currency: "MAD",
+    images: [
+      "/Image/Rosa_Albertine_-_Giverny01.jpg",
+      "/Image/Rosa_Albertine_-_Giverny03.jpg"
+    ]
   },
   {
     id: 14,
-    name: "Porte coulissante aluminium",
-    category: "aluminium",
-    price: 5200,
-    image: "https://via.placeholder.com/300x200?text=Porte+Coulissante+Alu",
+    category: "Fleurs",
+    name: "Kalanchoe",
+    price: 12,
+    currency: "MAD",
+    images: [
+      "/Image/Kalanchoe_blossfeldiana.jpg"
+    ]
   },
   {
     id: 15,
-    name: "Baie vitrée aluminium",
-    category: "aluminium",
-    price: 6800,
-    image: "https://via.placeholder.com/300x200?text=Baie+Vitrée",
+    category: "Fleurs",
+    name: "Ipomea",
+    price: 22,
+    currency: "MAD",
+    images: [
+      "/Image/ipomea-maroc-clorofila.jpeg"
+    ]
   },
   {
     id: 16,
-    name: "Volet roulant aluminium",
-    category: "aluminium",
-    price: 2700,
-    image: "https://via.placeholder.com/300x200?text=Volet+Alu",
-  },
-  {
-    id: 17,
-    name: "Véranda aluminium",
-    category: "aluminium",
-    price: 12500,
-    image: "https://via.placeholder.com/300x200?text=Véranda+Alu",
-  },
-  {
-    id: 18,
-    name: "Garde-corps aluminium",
-    category: "aluminium",
-    price: 2400,
-    image: "https://via.placeholder.com/300x200?text=Garde+corps+Alu",
-  },
-  {
-    id: 19,
-    name: "Claustra aluminium",
-    category: "aluminium",
-    price: 3100,
-    image: "https://via.placeholder.com/300x200?text=Claustra+Alu",
-  },
-  {
-    id: 20,
-    name: "Brise-soleil aluminium",
-    category: "aluminium",
-    price: 3600,
-    image: "https://via.placeholder.com/300x200?text=Brise+Soleil+Alu",
-  },
-
-  // ⚙️ INOX (10)
-  {
-    id: 21,
-    name: "Garde-corps inox",
-    category: "inox",
-    price: 2800,
-    image: "https://via.placeholder.com/300x200?text=Garde+corps+Inox",
-  },
-  {
-    id: 22,
-    name: "Rampe d’escalier inox",
-    category: "inox",
-    price: 3200,
-    image: "https://via.placeholder.com/300x200?text=Rampe+Inox",
-  },
-  {
-    id: 23,
-    name: "Main courante inox",
-    category: "inox",
-    price: 1900,
-    image: "https://via.placeholder.com/300x200?text=Main+Courante+Inox",
-  },
-  {
-    id: 24,
-    name: "Portail inox",
-    category: "inox",
-    price: 8500,
-    image: "https://via.placeholder.com/300x200?text=Portail+Inox",
-  },
-  {
-    id: 25,
-    name: "Escalier inox",
-    category: "inox",
-    price: 11000,
-    image: "https://via.placeholder.com/300x200?text=Escalier+Inox",
-  },
-  {
-    id: 26,
-    name: "Table inox professionnelle",
-    category: "inox",
-    price: 4200,
-    image: "https://via.placeholder.com/300x200?text=Table+Inox",
-  },
-  {
-    id: 27,
-    name: "Garde-corps balcon inox",
-    category: "inox",
-    price: 3000,
-    image: "https://via.placeholder.com/300x200?text=Balcon+Inox",
-  },
-  {
-    id: 28,
-    name: "Barrière inox",
-    category: "inox",
-    price: 2600,
-    image: "https://via.placeholder.com/300x200?text=Barrière+Inox",
-  },
-  {
-    id: 29,
-    name: "Clôture inox",
-    category: "inox",
-    price: 5100,
-    image: "https://via.placeholder.com/300x200?text=Clôture+Inox",
-  },
-  {
-    id: 30,
-    name: "Étagère inox",
-    category: "inox",
-    price: 2300,
-    image: "https://via.placeholder.com/300x200?text=Étagère+Inox",
-  },
+    category: "Fleurs",
+    name: "Impatiens",
+    price: 22,
+    currency: "MAD",
+    images: [
+      "/Image/impatiens-1239866_1280.jpg"
+    ]
+  }
 ];
 
 export default products;

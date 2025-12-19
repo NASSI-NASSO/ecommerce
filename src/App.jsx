@@ -1,28 +1,30 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Home from "./pages/Home"
-import Catalogue from "./pages/Catalogue"
-import Whishlist from "./pages/Whishlist"
-import Navbar from "./components/Navbar"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Catalogue from "./pages/Catalogue";
+import Navbar from "./components/Navbar";
+import CartSidebar from "./components/CartSidebar";
+import { useState } from "react";
+import Wishlist from "./pages/Whishlist";
 
-function App() {
-  
-  return (
-    <>
-      <BrowserRouter>
-      <Navbar/>
-      <div style={{ marginTop: "80px" }}>
-        <Routes>
-          
-          <Route path="/" element={<Home/>}/>
-          <Route path="/Catalogue" element={<Catalogue/>}/>
-          <Route path="/Whishlist" element={<Whishlist/>}/>
-        </Routes>
-      </div>
 
-      </BrowserRouter>
-        
-    </>
-  )
+
+export default function App() {
+  const [cartOpen, setCartOpen] = useState(false);
+
+return (
+<BrowserRouter>
+<Navbar  onCartClick={() => setCartOpen(true)}/>
+  <CartSidebar
+        isOpen={cartOpen}
+        onClose={() => setCartOpen(false)}
+  />
+<Routes>
+<Route path="/" element={<Home />} />
+<Route path="/catalogue" element={<Catalogue />} /> 
+<Route path="/wishlist" element={<Wishlist />} /> 
+
+
+</Routes>
+</BrowserRouter>
+);
 }
-
-export default App

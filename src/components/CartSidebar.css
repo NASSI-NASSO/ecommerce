@@ -1,0 +1,51 @@
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 100;
+}
+
+.cart-sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 350px;
+  height: 100%;
+  background: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.qty button {
+  padding: 2px 8px;
+  margin: 0 5px;
+}
+
+.remove {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
